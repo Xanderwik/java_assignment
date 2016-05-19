@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+ 
+ //Edit made on the website 
+ 
 package AddressBook;
 
 import java.sql.Connection;
@@ -37,6 +40,8 @@ public final class Book {
         CreateConnection();
         PopulatePhoneBook();
         
+        CreateConnection();
+        conn.Close();
 
         
     }
