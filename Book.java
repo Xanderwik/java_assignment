@@ -103,7 +103,6 @@ public final class Book {
      */
     public String[] GetChosenInfo(String chosenName)
     {
-        
         int chosenItem = 0;
         chosenName = chosenName.split(",")[0];
 
@@ -111,9 +110,7 @@ public final class Book {
         {
             String itemLastName = addresses.get(i).getLastName();
             if (chosenName.equals(itemLastName))
-            {
-                chosenItem = i;
-            }
+                 chosenItem = i;
         }
         
         return addresses.get(chosenItem).ChosenArray();
